@@ -74,3 +74,17 @@ ctf-player | 7a67ab5872843b22b5e14511867c4e43
 noaccess | 83806b490e28a7f8e6662646cbdbff1a
 admin | 5a9a79d9fa477ed163b89088681672c9
 pwnuser99 | 482c811da5d5b4bc6d497ffa98491e38
+
+### Step 4: Cracking the Legacy Hash
+The challenge references legacy hash structures. The extracted hash for the target user `ctf-player` matches standard MD5 formatting.
+
+* **Target Hash (`ctf-player`):** `7a67ab5872843b22b5e14511867c4e43`
+* **Hash Type:** MD5
+* **Cracked Plaintext:** `dyesebel` (recovered via CrackStation)
+
+### Step 5: Authenticating and Retrieving the Flag
+1. Return to the application login page in your browser and log out of the temporary account.
+2. Log back in using the legitimate user credentials uncovered from the database dump:
+   * **Username:** `ctf-player`
+   * **Password:** `dyesebel`
+3. Upon successful authentication, the application displays the protected dashboard revealing the flag.

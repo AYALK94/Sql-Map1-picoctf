@@ -88,3 +88,4 @@ The challenge references legacy hash structures. The extracted hash for the targ
    * **Username:** `ctf-player`
    * **Password:** `dyesebel`
 3. Upon successful authentication, the application displays the protected dashboard revealing the flag.
+
